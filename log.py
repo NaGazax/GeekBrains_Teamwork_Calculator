@@ -1,4 +1,5 @@
 from datetime import datetime as dt
+
 log_file = open('log_file.txt', 'w')
 operation_time = dt.now().strftime('%H:%M')
 
