@@ -6,5 +6,6 @@ import log
 
 def button_click():
     value_lst = view.get_value()
-    operations.init(value_lst)
-
+    operations.calc(value_lst)
+    result = operations.calc()
+    view.output(result)
