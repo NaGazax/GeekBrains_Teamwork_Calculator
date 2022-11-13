@@ -6,6 +6,7 @@ import log
 
 def button_click():
     value_lst = view.get_value()
-    operations.calc(value_lst)
-    result = operations.calc()
+    result = operations.calc(value_lst)
     view.output(result)
+    log_message = log.end_OK(result)
+    log.logwrite(view.log_asking(), log_message)
